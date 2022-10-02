@@ -6,7 +6,6 @@ import 'package:news_app/layout/cubit.dart';
 import 'package:news_app/layout/states.dart';
 
 class BusinessScreen extends StatelessWidget {
-  const BusinessScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
