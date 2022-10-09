@@ -6,6 +6,8 @@ import 'package:news_app/layout/cubit.dart';
 import 'package:news_app/layout/states.dart';
 
 class BusinessScreen extends StatelessWidget {
+  const BusinessScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class BusinessScreen extends StatelessWidget {
       builder: (BuildContext context, Object? state) {
         var list=NewsCubit.get(context).business;
         return ConditionalBuilder(
-        condition: list.length>0,
+        condition: list.isNotEmpty,
         builder: (BuildContext context) { 
          return ListView.separated(
           physics: const BouncingScrollPhysics(),
